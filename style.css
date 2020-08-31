@@ -1,0 +1,65 @@
+body{font-family: sans-serif; background-color: lightblue; box-sizing: border-box;}
+
+form{
+    background-color: white;
+    border-radius: 10px;
+    color: cornflowerblue;
+    font-size: 14px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+input{
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+
+    width: 280px;
+    height: 30px;
+}
+.inputcss{
+    border: solid 1px #ccc;
+    padding: 10px;
+}
+select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.inputcss:focus{
+    border-color:  rgb(124, 193, 250);
+}
+.center-content{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.btn-enviar{
+    border: none;
+    background: cornflowerblue;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn-enviar:hover{
+    background: darkcyan;
+}
+  
+/* quitar flechas en input number */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+

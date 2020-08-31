@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form class="form-register" onsubmit="return validar();">
+        <div class="contenedor-inputs">
+            <h2>Información personal</h2>
+            <input type="number" id="rut" name="rut" placeholder="Rut" class="inputcss">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="inputcss">
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="inputcss">
+            <input type="number" id="edad" name="edad" placeholder="Edad" class="inputcss">
+            <input type="email" id="correo" name="correo" placeholder="Correo" class="inputcss">
+            <h2>Datos de reserva</h2>
+            <input type="text" id="especialidad" name="especialidad" placeholder="Especialidad" class="inputcss">
+            <input type="date" id="calendario" name="calendario" value="2020-08-31" min="2020-01-01" max="2020-12-31" class="inputcss">
+            <select name="hora" id="hora" class="inputcss">
+                <option value="09:00">09:00am</option>
+                <option value="10:00">10:00am</option>
+                <option value="11:00">11:00am</option>
+                <option value="12:00">12:00pm</option>
+                <option value="12:00">13:00pm</option>
+                <option value="12:00">14:00pm</option>
+                <option value="12:00">15:00pm</option>
+            </select>
+            <button type="button" id="registrar" class="btn-enviar">Registrar</button>
+
+        </div>
+    </form> 
+    <script src="app.js"></script>
+</body>
+</html>
+
+
